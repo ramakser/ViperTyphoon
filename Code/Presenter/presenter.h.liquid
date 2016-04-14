@@ -1,0 +1,15 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}PresenterInterface.h"
+#import "{{ prefix }}{{ module_info.name }}Router.h"
+
+@protocol {{ prefix }}{{ module_info.name }}ViewInterface;
+@protocol {{ prefix }}{{ module_info.name }}InteractorInterface;
+
+@interface {{ prefix }}{{ module_info.name }}Presenter : NSObject <{{ prefix }}{{ module_info.name }}PresenterInterface>
+
+@property (nonatomic, weak) id<{{ prefix }}{{ module_info.name }}ViewInterface> view;
+@property (nonatomic, strong) id<{{ prefix }}{{ module_info.name }}InteractorInterface> interactor;
+@property (nonatomic, strong) id<{{ prefix }}{{ module_info.name }}Router> router;
+
+@end

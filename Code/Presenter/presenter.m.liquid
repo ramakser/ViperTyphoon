@@ -1,0 +1,20 @@
+{% include 'header' %}
+
+#import "{{ prefix }}{{ module_info.name }}Presenter.h"
+
+#import "{{ prefix }}{{ module_info.name }}ViewInterface.h"
+#import "{{ prefix }}{{ module_info.name }}InteractorInterface.h"
+
+@implementation {{ prefix }}{{ module_info.name }}Presenter
+
+#pragma mark - {{ prefix }}{{ module_info.name }}ViewInterface
+
+- (void)configureModule {
+    // Стартовая конфигурация модуля, не привязанная к состоянию view
+}
+
+- (void)didTriggerViewReadyEvent {
+	[self.view setupInitialState];
+}
+
+@end
