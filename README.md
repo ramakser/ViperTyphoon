@@ -1,5 +1,8 @@
 # ViperTyphoon
 
+##*Generamba:* [get generamba](https://github.com/rambler-ios/Generamba)
+
+### My version realization Generamba with using Viper + Typhoon
 
 ### Overview
 
@@ -9,8 +12,6 @@
 **Generamba** is a code generator made for working with Xcode. Primarily it is designed to generate VIPER modules but it is quite easy to customize it for generation of any other classes (both in Objective-C and Swift).
 
 *We keep evolving Generamba:* [changelog](https://github.com/rambler-ios/Generamba/blob/develop/CHANGELOG.md), [release notes](https://github.com/rambler-ios/Generamba/releases).
-
-![Generamba Screenshot](http://s24.postimg.org/gej9cg1cl/generamba.jpg)
 
 ### Usage
 1. Run [`generamba setup`](https://github.com/rambler-ios/Generamba/wiki/Available-Commands#basic-generamba-configuration) in the project root folder. This command helps to create [Rambafile](https://github.com/rambler-ios/Generamba/wiki/Rambafile-Structure) that define all configuration needed to generate code. You can modify this file directly in future.
