@@ -2,13 +2,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol {{ prefix }}{{ module_info.name }}ModuleInput <RamblerViperModuleInput>
+@protocol {{ prefix }}{{ module_info.name }}PresenterInterface
 
-/**
- @author {{ developer.name }}
-
- Метод инициирует стартовую конфигурацию текущего модуля
- */
 - (void)configureModule;
 
 @end
