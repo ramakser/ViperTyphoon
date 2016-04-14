@@ -7,14 +7,4 @@
 
 @implementation {{ prefix }}{{ module_info.name }}Presenter
 
-#pragma mark - {{ prefix }}{{ module_info.name }}ViewInterface
-
-- (void)configureModule {
-    // Стартовая конфигурация модуля, не привязанная к состоянию view
-}
-
-- (void)didTriggerViewReadyEvent {
-	[self.view setupInitialState];
-}
-
 @end
