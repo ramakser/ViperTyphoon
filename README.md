@@ -2,7 +2,7 @@
 
 ##*Generamba:* [get generamba](https://github.com/rambler-ios/Generamba)
 
-### My version realization Generamba with using Viper + Typhoon
+### My version realization Generamba Template for project which using Viper + Typhoon
 
 ### Overview
 

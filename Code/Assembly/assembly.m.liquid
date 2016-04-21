@@ -11,6 +11,7 @@
 
 - ({{ prefix }}{{ module_info.name }}ViewController *)view{{ module_info.name }}Module {
   // add realization of view controller by yourself
+  return nil;
 }
 
 - ({{ prefix }}{{ module_info.name }}Interactor *)interactor{{ module_info.name }}Module {
@@ -36,8 +37,10 @@
 - ({{ prefix }}{{ module_info.name }}Router *)router{{ module_info.name }}Module {
     return [TyphoonDefinition withClass:[{{ prefix }}{{ module_info.name }}Router class]
                           configuration:^(TyphoonDefinition *definition) {
-                              [definition injectProperty:@selector(transitionHandler)
+                              [definition injectProperty:@selector(view)
                                                     with:[self view{{ module_info.name }}Module]];
+                              [definition injectProperty:@selector(presenter)
+                                                    with:[self presenter{{ module_info.name }}Module]];
                           }];
 }
 
